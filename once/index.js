@@ -1,6 +1,5 @@
 let once = function(func) {
-  let logger = [];
-  let result;
+  let logger = [], result;
   return function() {
     if (logger.indexOf(func) === -1) {
       logger.push(func);
