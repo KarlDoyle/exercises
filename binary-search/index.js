@@ -1,4 +1,4 @@
-let binarySearch = function(array, value, referenceArray) {
+module.exports = function(array, value, referenceArray) {
   let sourceArray = (referenceArray) ? referenceArray : array;
 
   if (array.length < 1) return -1;
@@ -22,6 +22,3 @@ let binarySearch = function(array, value, referenceArray) {
     return sourceArray.indexOf(value) || target;
   }
 }
-
-
-module.exports = binarySearch;
